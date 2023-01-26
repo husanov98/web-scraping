@@ -1,0 +1,14 @@
+website:
+  urls: https://ikman.lk/en/ads/sri-lanka/vehicles?sort=relevance&buy_now=0&urgent=0&query=,https://riyasewana.com/search/,https://my.gov.uz/oz/all-services
+
+paths:
+  /upload:
+    post:
+      summary: Uploads a file.
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: upfile
+          type: file
+          description: The file to upload.
