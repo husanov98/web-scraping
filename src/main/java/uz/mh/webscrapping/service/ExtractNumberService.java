@@ -69,7 +69,7 @@ public class ExtractNumberService {
         String url = "https://my.gov.uz/oz/gtk-auto";
         HtmlPage page = client.getPage(url);
         HtmlForm form = (HtmlForm) page.getByXPath("//form").get(0);
-
+//        page.getByXPath("");
         HtmlInput inputNumber = form.getInputByName("GtkAuto[number]");
 
         inputNumber.type(number);
